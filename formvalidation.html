@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./formvalidation.css" />
+  </head>
+  <body>
+    <section>
+      <h1>Sign up</h1>
+      <form action="./formlogin.html" onsubmit="return validation(event)">
+        <div>
+          <label for="username" id="one"></label>
+          <input type="text" placeholder="Username" id="username" />
+        </div>
+
+        <div>
+          <label for="phonenumber" id="two"></label>
+          <input type="text" placeholder="phone number" id="phonenumber" />
+        </div>
+
+        <div>
+          <label for="email" id="three"></label>
+          <input type="text" placeholder="email" id="email" />
+        </div>
+
+        <div>
+          <label for="password" id="four"></label>
+          <input type="password" placeholder="password" id="password" />
+        </div>
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+    <script src="./formvalidation.js"></script>
+  </body>
+</html>

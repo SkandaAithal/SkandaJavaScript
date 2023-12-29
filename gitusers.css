@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  width: 100%;
+}
+body {
+  width: inherit;
+}
+#users {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+.user {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+
+  background-color: beige;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+.user img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem;
+  margin: auto;
+}
+.user h1 {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: chocolate;
+}
+.user h2 {
+  text-align: center;
+}
+.user a {
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  text-align: center;
+}

@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  width: 100%;
+}
+body {
+  width: inherit;
+}
+#products_list {
+  display: grid;
+  margin: 2rem;
+  gap: 1rem;
+  grid-auto-rows: 1fr;
+  background-color: rgb(139, 33, 4);
+}
+#products_list .container {
+  background-color: bisque;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.heading {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-block: 1.5rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  padding-block: 0.25rem;
+}
+.heading h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.heading h1 {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.info img {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 25%;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-inline: 2.5rem;
+  padding-block: 1rem;
+  gap: 1rem;
+
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 196, 0),
+    5%,
+    transparent
+  );
+}
+.description p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.description a {
+  display: inline-block;
+  width: 10rem;
+  text-align: center;
+  background-color: red;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+}

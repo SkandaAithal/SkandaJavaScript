@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.hideshow {
+  display: grid;
+  width: 50%;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 100px auto;
+}
+
+.hideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hideshow .buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* slider */
+
+section {
+  position: relative;
+  background-color: black;
+}
+.banner-image {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.banner-image img {
+  width: 80%;
+  height: 80%;
+}
+.banner-image button {
+  padding: 1rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 15%;
+  gap: 0.5rem;
+  width: 100%;
+}
+.circle {
+  width: 1rem;
+  height: 1rem;
+  scale: 0.75;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+}
+.pagecolor {
+  background-color: blue;
+  scale: 1.25;
+  animation-name: movedot;
+  animation-duration: 0.3s;
+}
+
+@keyframes movedot {
+  0% {
+    transform: translateY(0rem);
+  }
+  30% {
+    transform: translateY(-0.5rem);
+  }
+  60% {
+    transform: translateY(0.25rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

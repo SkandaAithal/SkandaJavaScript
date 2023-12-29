@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="hideshow">
+      <img
+        src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
+        alt=""
+      />
+
+      <div class="buttons">
+        <button onclick="clickhide()" id="hide">Hide</button
+        ><button onclick="clickshow()" id="show">Show</button>
+      </div>
+    </div>
+
+    <div class="hideshow">
+      <img
+        class="change"
+        src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
+        alt=""
+      />
+
+      <div class="buttons">
+        <button onclick="toggle()" id="hide2">Hide</button>
+      </div>
+    </div>
+
+    <section>
+      <div class="banner-image">
+        <button onclick="left()"><</button>
+        <img src="./image1.jpeg" alt="" />
+        <button onclick="right()">></button>
+      </div>
+      <div class="pagination">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </section>
+
+    <div class="counter">
+      <h1>Counter : <span id="counts"></span></h1>
+
+      <button class="increment">Increment</button
+      ><button class="remove">Remove</button>
+    </div>
+
+    <!-- ^ start stop reset -->
+
+    <h1>counter : <span id="countvalue"></span></h1>
+    <button id="start">Start</button><button id="stop">Stop</button
+    ><button onclick="reset()">Reset</button>
+    <script src="./App.js"></script>
+  </body>
+</html>
